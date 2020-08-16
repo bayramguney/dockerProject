@@ -1,5 +1,6 @@
 package docker;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -14,6 +15,7 @@ public class ChromeTest1 {
     public void test() throws MalformedURLException {
     DesiredCapabilities dc=new DesiredCapabilities();
     dc.setBrowserName(BrowserType.CHROME);
+
     URL url = new URL("http://localhost:4444/wd/hub");
         RemoteWebDriver driver = new RemoteWebDriver(url, dc);
         driver.get("https://www.samsung.com");

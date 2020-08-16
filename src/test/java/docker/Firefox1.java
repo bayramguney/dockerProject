@@ -16,7 +16,7 @@ public class Firefox1 {
         URL url = new URL("http://localhost:4444/wd/hub");
 
         RemoteWebDriver driver = new RemoteWebDriver(url, dc);
-        driver.get("https://www.github.com");
+        driver.get("https://www.apple.com");
         System.out.println(driver.getTitle());
     }
 
