@@ -16,7 +16,7 @@ public class ChromeTest1 {
     dc.setBrowserName(BrowserType.CHROME);
     URL url = new URL("http://localhost:4444/wd/hub");
         RemoteWebDriver driver = new RemoteWebDriver(url, dc);
-        driver.get("https://www.apple.com");
+        driver.get("https://www.samsung.com");
         System.out.println(driver.getTitle());
     }
 }
