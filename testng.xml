@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basqar Suite 1" parallel="classes">
+    <test name="docker  test" thread-count="5">
+        <classes>
+            <class name="docker.Setup_DockerGrid"></class>
+            <class name="docker.ChromeTest1"></class>
+           <!-- <class name="docker.ChromeTest2"></class>
+            <class name="docker.ChromeTest3"></class> -->
+            <class name="docker.Firefox1"></class>
+
+        </classes>
+    </test>
+</suite>
